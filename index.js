@@ -44,5 +44,6 @@ function addExactAmounts(){ // makes an array for each item name and amount
     }
 }
 
+
 //send text messages
 
