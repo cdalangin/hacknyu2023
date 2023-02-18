@@ -21,3 +21,4 @@ let totalCost = bill + tips;
 let equalSplit = totalCost / numOfPeople;
 
 //send text messages
+
