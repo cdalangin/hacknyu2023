@@ -1,26 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Nunito&display=swap');
+
 .main-div {
     height: 100vh;
     width: 100vw;
-    background-color: #F4BFDB;
+    background-color: #fcd5ce;
     display: flex;
     flex-direction: column;
 }
 
-.bottom-nav {
-    width: 90%;
-    margin: auto;
-    background-color: bisque;
-    border-radius: 20px;
+/* font-family: 'Erica One', cursive;
+font-family: 'Nunito', sans-serif; */
+
+.instructions-div {
+    background-color: #f8edeb;
+    margin: 20px;
+    padding: 20px;
+    color: #ba6113;
 }
 
-.curr {
-    background-color: aqua;
-    border-radius: 30px;
+.instructions-title {
+    font-family: 'Erica One', cursive;
+}
+
+.instructions-text {
+    font-family: 'Nunito', sans-serif;
 }
 
 .add-new {
     border-radius: 50%;
-    background-color: red;
+    background-color: #ffb5a7;
     height: 50px;
     width: 50px;
     position: absolute;
