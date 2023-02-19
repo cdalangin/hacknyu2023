@@ -1,11 +1,12 @@
 //get user input: total cost, tips, # of people
-let bill = document.getElementsByClassName("form-control").placeholder="Total Cost";
-let tips = document.getElementsByClassName("form-control").placeholder="Total Tip";
-let numOfPeople = document.getElementsByClassName("form-control").placeholder="of People";
+let bill = document.querySelector("#cost").value;
+let tips = document.querySelector("#tip").value;
+let numOfPeople = document.querySelector("#numPeople").value;
 const names = [];
 const orders = [];
 const phoneNumbers = [];
 
+console.log(bill, tips, numOfPeople);
 
 function getNamesAndNumbers(numOfPeople, phoneNumbers, names){
     for (i = 0; i < numOfPeople; i++){
