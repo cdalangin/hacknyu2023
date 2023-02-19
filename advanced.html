@@ -16,16 +16,14 @@
     <style>
         body {
             background-color: #FCD5CE;
-            height: 100vh;
 
         }
 
         #mainContent {
-            height: 80vh;
-
+            height: 110vh;
             margin: 10px;
             padding: 10px;
-
+            font-family: 'Nunito', sans-serif;
 
             background-color: #F8EDEB;
             box-sizing: border-box;
@@ -82,11 +80,6 @@
             margin: 15px;
         }
 
-        #userInput {
-            width: 180px;
-            margin: 10px;
-        }
-
         #notes {
             background-color: white;
 
@@ -140,6 +133,53 @@
             color: #fff;
             transform: translateY(-7px);
         }
+
+        #totals {
+            width: 95%;
+            margin: 20px auto;
+            height: 150px;
+            background-color: white;
+            border-radius: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Kanit', sans-serif;
+            color: #7e420d;
+        }
+
+        #add-people {
+            width: 95%;
+            margin: 20px auto;
+            height: 200px;
+            background-color: white;
+            border-radius: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Kanit', sans-serif;
+            color: #7e420d;
+        }
+
+        .people-totals {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .people {
+            background-color: #FFB5A7;
+            margin: 10px;
+            border-radius: 20px;
+            padding: 10px;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -154,19 +194,21 @@
 
     <div id="mainContent">
         <div class="row">
-            <div id="receipt">Upload The Recipt</div>
+            <div id="receipt">Upload The Receipt</div>
 
             <a href="/default.html" class="go-default"><button id="button1">Back</button></a>
         </div>
 
         <div id="userInput">
-
-            <div class="input-group input-group-sm mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">#</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
-                    placeholder="of People" value="">
+            <div id="add-people">
+                <h4>Assign people & bill amounts:</h4>
+                <div class="people-totals">
+                    <p class="people">+ add name</p>
+                    <p class="people">+ add amount</p>
+                </div>    
+                <div class="people-totals">
+                    <p class="people">+ new row</p>
+                </div>    
             </div>
 
             <div class="input-group input-group-sm mb-3">
@@ -177,27 +219,30 @@
                     placeholder="Total Tip" value="">
             </div>
 
-            <div class="input-group input-group-sm mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
-                </div>
-                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
-                    placeholder="Total Cost" value="">
-            </div>
-
         </div>
 
         <div id="notes">
             <div class="input-group" id="inputs">
 
                 <textarea class="form-control" aria-label="With textarea"
-                    placeholder="Leave any message to your freinds?"></textarea>
+                    placeholder="Leave any message to your friends?"></textarea>
             </div>
             <div class="input-group" id="inputs">
 
                 <textarea class="form-control" aria-label="With textarea"
                     placeholder="How will you get paid?"></textarea>
             </div>
+        </div>
+
+        <div id="totals">
+            <h4>Totals:</h4>
+            <div class="people-totals">
+                <p class="people">Values will be displayed here</p>
+                <!-- Hard coded example: -->
+                <!-- <p class="people">Person 1: $50</p>
+                <p class="people">Person 2: $40</p>
+                <p class="people">Person 3: $60</p> -->
+            </div>     
         </div>
 
         <button id="button2">
