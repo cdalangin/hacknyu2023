@@ -70,8 +70,19 @@
             margin: 15px;
         }
 
-        #numofPeople {
-            width: 30px;
+        #userInput {
+            width: 180px;
+            /* float: left; */
+            margin: 10px;
+        }
+
+        #notes {
+            background-color: white;
+
+            height: 150px;
+            margin: 10px;
+            border-radius: 20px;
+            box-sizing: border-box;
         }
     </style>
 </head>
@@ -94,20 +105,40 @@
         </div>
 
         <div id="userInput">
-            <div id="numofPeople">
-                <input type="text" placeholder="# of People">
+
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">#</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
+                    placeholder="of People" value="">
             </div>
 
-            <div id="numofPeople">
-                <input type="text" placeholder="# of People">
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
+                    placeholder="Total Tip" value="">
             </div>
 
-            <div id="numofPeople">
-                <input type="text" placeholder="# of People">
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-sm">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"
+                    placeholder="Total Cost" value="">
             </div>
+
         </div>
 
+        <!-- <button id="button2">
+            Calculate!
+        </button> -->
 
+        <div id="notes">
+            <input type="text">
+        </div>
     </div>
 
 
