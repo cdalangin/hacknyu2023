@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Erica+One&family=Nunito&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&display=swap');
 .main-div {
     height: 100vh;
     width: 100vw;
@@ -8,8 +8,21 @@
     flex-direction: column;
 }
 
-/* font-family: 'Erica One', cursive;
-font-family: 'Nunito', sans-serif; */
+nav {
+    background: #FFB5A7;
+}
+
+#logo {
+    margin: 15px;
+    transform: scale(1.5);
+    
+}
+
+h3 {
+    margin: 15px;
+    font-family: 'Kanit', sans-serif;
+    color: #7e420d;
+}
 
 .instructions-div {
     background-color: #f8edeb;
@@ -19,7 +32,7 @@ font-family: 'Nunito', sans-serif; */
 }
 
 .instructions-title {
-    font-family: 'Erica One', cursive;
+    font-family: 'Kanit', sans-serif;
 }
 
 .instructions-text {
