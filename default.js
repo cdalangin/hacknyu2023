@@ -1,7 +1,7 @@
 //get user input: total cost, tips, # of people
-let bill = 400;
-let tips = 40;
-let numOfPeople = 4;
+let bill = document.getElementsByClassName("form-control").placeholder="Total Cost";
+let tips = document.getElementsByClassName("form-control").placeholder="Total Tip";
+let numOfPeople = document.getElementsByClassName("form-control").placeholder="of People";
 const names = [];
 const orders = [];
 const phoneNumbers = [];
@@ -43,7 +43,6 @@ function addExactAmounts(){ // makes an array for each item name and amount
         orders.push(orderTotal);
     }
 }
-
 
 //send text messages
 
